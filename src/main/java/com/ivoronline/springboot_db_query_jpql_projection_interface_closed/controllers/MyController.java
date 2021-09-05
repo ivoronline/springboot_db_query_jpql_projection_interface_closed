@@ -1,7 +1,5 @@
 package com.ivoronline.springboot_db_query_jpql_projection_interface_closed.controllers;
 
-import com.ivoronline.springboot_db_query_jpql_projection_interface_closed.dto.PersonDTO;
-import com.ivoronline.springboot_db_query_jpql_projection_interface_closed.entities.Person;
 import com.ivoronline.springboot_db_query_jpql_projection_interface_closed.entities.PersonView;
 import com.ivoronline.springboot_db_query_jpql_projection_interface_closed.repositories.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +19,5 @@ public class MyController {
     PersonView personView = personRepository.returnPersonView();
     return     personView;
   }
-
 
 }
